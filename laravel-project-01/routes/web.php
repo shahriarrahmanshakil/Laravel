@@ -10,4 +10,8 @@ Route::get('/post', function () {
     return view('post');
 });
 
+Route::get('/sub', function () {
+    return view('delete');
+});
+
 Route::view('update', '/update');
