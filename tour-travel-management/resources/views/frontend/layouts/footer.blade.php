@@ -26,22 +26,22 @@
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="{{url('frontend/img/package-1.jpg')}}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/package-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="{{url('frontend/img/package-2.jpg')}}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/package-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="{{url('frontend/img/package-3.jpg')}}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/package-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="{{url('frontend/img/package-2.jpg')}}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/package-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="{{url('frontend/img/package-3.jpg')}}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="{{url('frontend/img/package-1.jpg')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -86,16 +86,16 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="{{url('frontend/lib/wow/wow.min.js')}}"></script>
+    <script src="{{url('frontend/lib/easing/easing.min.js')}}"></script>
+    <script src="{{url('frontend/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{url('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{url('frontend/lib/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{url('frontend/lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{url('frontend/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{url('frontend/js/main.js')}}"></script>
 </body>
 
 </html>

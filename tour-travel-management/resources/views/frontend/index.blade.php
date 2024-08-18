@@ -6,7 +6,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
+                        <img class="{{url('frontend/img-fluid position-absolute w-100 h-100')}}" src="{{url('frontend/img/about.jpg')}}" alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -43,7 +43,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
@@ -124,12 +124,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Service End -->
 
 
     <!-- Destination Start -->
-    <div class="container-xxl py-5 destination">
+    {{-- <div class="container-xxl py-5 destination">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
@@ -170,12 +170,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Destination Start -->
 
 
     <!-- Package Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
@@ -265,12 +265,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Package End -->
 
 
     <!-- Booking Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    {{-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="booking p-5">
                 <div class="row g-5 align-items-center">
@@ -328,12 +328,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Booking Start -->
 
 
     <!-- Process Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
@@ -375,12 +375,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Process Start -->
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
@@ -453,12 +453,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    {{-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
@@ -491,7 +491,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Testimonial End -->
 @endsection      
 
