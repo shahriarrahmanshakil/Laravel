@@ -14,5 +14,5 @@ use App\Http\Controllers\Frontend\TestimonialController;
 Route::get('/',[IndexController::class,'index']);
 Route::get('/about',[AboutController::class,'about']);
 Route::get('/services',[ServiceController::class,'service']);
-
+// tesrt
 
