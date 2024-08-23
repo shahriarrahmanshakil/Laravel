@@ -1,1 +1,6 @@
-<h1>Package</h1>
+@extends('backend.layouts.main');
+@section('admin-content')
+
+
+
+@endsection
