@@ -9,21 +9,21 @@
     <title>laravel-project-03</title>
 </head>
 <body>
-    <form action="{{route('store')}}" method="POST">
+    <form action="{{route('store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3 col-6">
           <label for="exampleInputEmail1" class="form-label">Name</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
 
         <div class="mb-3 col-6">
             <label for="floatingTextarea" class="form-label">Description</label>
-            <textarea class="form-control" placeholder="comment here" id="floatingTextarea"></textarea>
+            <textarea name="description" class="form-control" placeholder="comment here" id="floatingTextarea"></textarea>
         </div>
 
         <div class="mb-3 col-6">
             <label for="formFileMultiple" class="form-label">Image</label>
-            <input class="form-control" type="file" id="formFileMultiple" multiple>
+            <input name="image" class="form-control" type="file" id="formFileMultiple" multiple>
           </div> 
         <button type="submit" class="btn btn-primary col-6">Submit</button>
       </form>
