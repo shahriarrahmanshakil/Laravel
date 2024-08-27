@@ -9,9 +9,6 @@
     <title>laravel-project-03</title>
 </head>
 <body>
-    @if(@session('success'))
-      <h1> {{session('success')}} </h1>
-    @endif
     <form action="{{route('store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3 col-6">

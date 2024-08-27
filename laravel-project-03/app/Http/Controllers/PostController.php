@@ -14,6 +14,6 @@ class PostController extends Controller
         $post->image = $request->image;
         
         $post->save();
-        return redirect()->back()->with('success', 'Successfully Data Inserted');
+        return redirect()->route('')->with('success', 'Successfully Data Inserted');
     }
 }
