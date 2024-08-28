@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('libraries', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('std_id');
+            $table->foreign('std_id')->references('id')->on('students');
+            $table->string('book');
+            $table->date('due_date')->nullable();
+            $table->boolean('status');
         });
     }
 
