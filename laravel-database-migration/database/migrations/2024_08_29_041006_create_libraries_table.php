@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('libraries', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('std_id');
-            $table->foreign('std_id')->references('id')->on('students');
+            $table->unsignedBigInteger('s_id');
+            $table->foreign('s_id')->references('id')->on('students');
             $table->string('book');
             $table->date('due_date')->nullable();
             $table->boolean('status');
