@@ -34,7 +34,9 @@
                     <td>{{$product->price}}</td>
                     <td>{{$product->description}}</td>
                     <td>
-                        <a href="{{route('products.edit', ['product' => $product])}}">Edit</a>
+                        <button>
+                            <a style="text-decoration:none; color:rgb(0, 0, 0);" href="{{route('products.edit', ['product' => $product])}}">Edit</a>
+                        </button>
                     </td>
                     <td>
                         <form method="POST" action="{{route('products.destroy', ['product' => $product])}}">
