@@ -9,6 +9,11 @@
 <body>
     <h1>Products Page</h1>
     <div>
+        @if (@session()->has('sucess'))
+           <h4> {{session('sucess')}}</h4>  
+        @endif
+    </div>
+    <div>
         <table border="1">
             <thead>
                 <tr>
@@ -28,7 +33,10 @@
                     <td>{{$product->qty}}</td>
                     <td>{{$product->price}}</td>
                     <td>{{$product->description}}</td>
-                    <td>Edit</td>
+                    <td>
+                        <a href="{{route('products.edit', ['product' => $product])}}">Edit</a>
+
+                    </td>
                 </tr>
             </tbody>
             @endforeach
