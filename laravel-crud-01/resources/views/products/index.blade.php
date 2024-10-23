@@ -22,7 +22,7 @@
                     <th>QTY</th>
                     <th>Price</th>
                     <th>Description</th>
-                    <th>Action</th>
+                    <th colspan="2">Action</th>
                 </tr>
             </thead>
             @foreach ( $products as $product )
@@ -35,7 +35,13 @@
                     <td>{{$product->description}}</td>
                     <td>
                         <a href="{{route('products.edit', ['product' => $product])}}">Edit</a>
-
+                    </td>
+                    <td>
+                        <form method="POST" action="{{route('products.destroy', ['product' => $product])}}">
+                            @csrf
+                            @method('delete')
+                            <input type="submit" value="Delete">
+                        </form>
                     </td>
                 </tr>
             </tbody>
