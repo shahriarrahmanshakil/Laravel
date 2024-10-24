@@ -12,11 +12,6 @@
         @csrf
         @method('put')
         <div>
-            @if (@session()->has('sucess'))
-                {{session('sucess')}}  
-            @endif
-        </div>
-        <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="name" value="{{$product->name}}">
         </div><br>
