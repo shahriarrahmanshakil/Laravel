@@ -7,6 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('product/create', [ProductsController::class, 'create'])->name('product.create');
-// Route::post('product/store', [ProductsController::class, 'store'])->name('product.store');
-Route::post('/product/store', [ProductsController::class, 'store'])->name('product.store');
+Route::get('/products', [ProductsController::class, 'index'])->name('products.index');
+Route::get('products/create', [ProductsController::class, 'create'])->name('products.create');
+Route::post('/products/store', [ProductsController::class, 'store'])->name('products.store');

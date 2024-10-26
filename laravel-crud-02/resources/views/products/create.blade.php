@@ -11,9 +11,14 @@
         <h3 class="text-white text-center">Laravel crud operations</h3>
     </div>
     <div class="container">
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-md-10 d-flex justify-content-end">
+                <a class="btn btn-dark" href="{{route('products.index')}}">Back</a>
+            </div>
+        </div>
         <div class="row d-flex justify-content-center">
             <div class="col-md-10">
-                <form action="{{route('product.store')}}" method="POST">
+                <form action="{{route('products.store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="card borde-0 shadow-lg my-5">
                         <div class="card-header bg-dark text-white">
@@ -22,15 +27,24 @@
                         <div class="card-body">
                             <div class="mb-3">
                                 <label for="name" class="form-label h5">Name</label>
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                                <input type="text" name="name" id="name" class="@error('name') is-invalid @enderror form-control" value="{{old('name')}}" placeholder="Name">
+                                @error('name')
+                                    <p class="invalid-feedback">{{$message}}</p>
+                                @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="sku" class="form-label h5">SKU</label>
-                                <input type="text" name="sku" id="sku" class="form-control" placeholder="SkU">
+                                <input type="text" name="sku" id="sku" class="@error('sku') is-invalid @enderror form-control" value="{{old('sku')}}" placeholder="SkU">
+                                @error('sku')
+                                    <p class="invalid-feedback">{{$message}}</p>
+                                @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="price" class="form-label h5">Price</label>
-                                <input type="text" name="price" id="price" class="form-control" placeholder="Price">
+                                <input type="text" name="price" id="price" class="@error('price') is-invalid @enderror form-control" value="{{old('price')}}" placeholder="Price">
+                                @error('price')
+                                    <p class="invalid-feedback">{{$message}}</p>
+                                @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="description" class="form-label h5">Description</label>
